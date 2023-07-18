@@ -1,0 +1,13 @@
+{
+    "name": "aes-tec-br",
+    "version": "1.0.0",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Arte-e-Software/aes-tec.br.git"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "serve-favicon": "^2.5.0"
+    }
+}

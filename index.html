@@ -5,339 +5,109 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Pedro Silva">
-    <!-- Meta TENANT -->
-    <!-- Meta SEO -->
-    <!-- Meta Share -->
-    <!-- Facebook -->
-    <!-- Linkedin -->
-    <!-- Twitter -->
-    <!-- WhatsApp -->
-    <!-- Email -->
+    <meta name="author" content="Pedro Silva - Arte & Sopftware">
     <title>
         Arte & Software Tecnologia
     </title>
     <link rel="canonical" href="https://aes.tec.br/">
-    <link href="assets/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        /* GLOBAL STYLES
-    -------------------------------------------------- */
-        /* Padding below the footer and lighter body text */
+    <link href="../assets/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
 
-        body {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            color: #5a5a5a;
-        }
-
-        /* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------------- */
-        /* Carousel base class */
-
-        .carousel {
-            margin-bottom: 4rem;
-        }
-
-        /* Since positioning the image, we need to help out the caption */
-
-        .carousel-caption {
-            bottom: 3rem;
-            z-index: 10;
-        }
-
-        /* Declare heights because of positioning of img element */
-
-        .carousel-item {
-            height: 32rem;
-        }
-
-        .carousel-item>img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            height: 32rem;
-        }
-
-        /* MARKETING CONTENT
-    -------------------------------------------------- */
-        /* Center align the text within the three columns below the carousel */
-
-        .marketing .col-lg-4 {
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .marketing h2 {
-            font-weight: 400;
-        }
-
-        /* rtl:begin:ignore */
-
-        .marketing .col-lg-4 p {
-            margin-right: .75rem;
-            margin-left: .75rem;
-        }
-
-        /* rtl:end:ignore */
-        /* Featurettes
-    ------------------------- */
-
-        .featurette-divider {
-            margin: 5rem 0;
-            /* Space out the Bootstrap <hr> more */
-        }
-
-        /* Thin out the marketing headings */
-
-        .featurette-heading {
-            font-weight: 300;
-            line-height: 1;
-            /* rtl:remove */
-            letter-spacing: -.05rem;
-        }
-
-        /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-        @media (min-width: 40em) {
-
-            /* Bump up size of carousel content */
-            .carousel-caption p {
-                margin-bottom: 1.25rem;
-                font-size: 1.25rem;
-                line-height: 1.4;
-            }
-
-            .featurette-heading {
-                font-size: 50px;
-            }
-        }
-
-        @media (min-width: 62em) {
-            .featurette-heading {
-                margin-top: 7rem;
-            }
-        }
-
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-light bg-white shadow fixed-top px-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/aes">
-                    <img src="assets/images/aes-vetor.svg" width="200" height="61" class="d-inline-block align-top"
-                        alt="arte e software">
-                </a>
-                <form class="d-flex">
-                    <a class="btn btn-lg btn-outline-primary border-0" type="button" role="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas"><i
-                            class="bi bi-list"></i>&nbsp;Menu</a>
-                </form>
-            </div>
-        </nav>
-
-    </header>
-
-    <div class="offcanvas offcanvas-top shadow" data-bs-scroll="true" tabindex="-1" id="menu-offcanvas"
-        aria-labelledby="menu-offcanvasLabel" style="height: fit-content;">
-        <div class="offcanvas-header shadow">
-            <h5 class="offcanvas-title" id="menu-offcanvasLabel"><img src="assets/images/aes-vetor.svg" width="200"
-                    height="61" class="d-inline-block align-top" alt="arte e software"></h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <!--
-          <div class="row">
-                <div class="col-5">
-                    <a href="/solucoes"><button class="form-control btn btn-sm btn-outline-primary my-1"><i
-                                class="bi bi-code-square"></i>&nbsp;Soluções</button></a>
-                    <a href="/hospedagem"><button class="form-control btn btn-sm btn-outline-primary my-1"><i
-                                class="bi bi-cloud"></i>&nbsp;Hospedagem</button></a>
-                    <a hred="/gestao-projetos"><button class="form-control btn btn-sm btn-outline-primary my-1"><i
-                                class="bi bi-diagram-3"></i>&nbsp;Projetos</button></a>
-                    <a hred="/curso"><button class="form-control btn btn-sm btn-outline-primary my-1"><i
-                                class="bi bi-laptop"></i>&nbsp;Curso</button></a>
-                    <button class="form-control btn btn-sm btn-outline-primary my-1"><i class="bi bi-box"></i>&nbsp;Quem
-                        Somos</button>
-                </div>
-                <div class="col-1"></div>
-                <div class="col-6">
-                    <i class="bi bi-person-circle"></i>&nbsp;Login<br>
-                    <form class="form-group">
-                        <input type="email" class="form-control mb-2" placeholder="E-mail" required>
-                        <input type="password" class="form-control" placeholder="Senha" required>
-                        <button class="form-control btn btn-sm btn-primary my-2">Entrar</button><button
-                            class="form-control btn btn-sm btn-outline-primary">Cadastrar</button>
-                    </form>
-                </div>
-            </div>
-    -->
-            <div class="row mt-3">
-                <div class="col">
-                    <p class="float-end"><a href="#"><i class="bi bi-arrow-up-circle-fill h4"></i></a></p>
-                    <p class="text-secondary"><small>&copy; 2006-2022&nbsp;<img src="assets/images/cubo.svg" width="20"
-                                height="20">&nbsp;<b>Arte e Software Tecnologia</b>
-                            <br>Rua Edvard Carmilo, 1283 - Butantã - São Paulo - São Paulo
-                            <br><i class="bi bi-phone text-primary"></i>&nbsp;11 99492-3850&nbsp;&nbsp;<i
-                                class="bi bi-whatsapp text-primary"></i>&nbsp;11 99841-7175</small></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <main>
 
-        <div class="container marketing">
-            <hr class="featurette-divider bg-white">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading"><i class="bi bi-code-square"></i>&nbsp;Soluções Web</h2>
-                    <p class="lead">Desenvolvemos para a Internet. Sites, sistemas, aplicativos, páginas etc.
-                        Somos uma agência completa. Trabalhamos com NodeJs do lado do servidor e Javascript puro
-                        do lado do cliente. Isso garante velocidade e economia para
-                        seu projeto assim como facilidade na implementação de novos recursos e na manuteção.
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" src="assets/images/desenvolvimento.svg" role="img"
-                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"><i class="bi bi-cloud"></i>&nbsp;Hospedagem na Nuvem</h2>
-                    <p class="lead">Oferecemos serviços de hospedagem na nuvem com alta disponibilidade e
-                        escalabilidade. Cuidamos de tudo para que você dedique seu tempo exclusivamente com o
-                        seu negócio. Nossa solução abrange desde sites estáticos e simples,
-                        para quem está começando, até grandes demandas. Utilizamos o MS SQL Server da Microsoft
-                        como gerenciador de banco de dados.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" src="assets/images/hospedagem.svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-
-
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading"><i class="bi bi-diagram-3"></i>&nbsp;Gestão de Projetos
-                    </h2>
-                    <p class="lead">Somos especialistas gestão de projetos e implantações, tais como Ensino à
-                        Distância, Serviços de Recebimento e Cobrança, Assinatura Eletrônica de Contratos,
-                        Pesquisas - captação e tabulação, Sistemas Acadêmicos, entre outros.
-                        Conte conosco.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" src="assets/images/projetos.svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-
-
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"><i class="bi bi-laptop"></i>&nbsp;Curso Particular</h2>
-                    <p class="lead">O mercado de tecnologia cresceu e a oferta de profissionais capacidados não
-                        acompanhou essa demanda. Pensando nisso, montamos um curso particular, semi-presencial,
-                        para grupos de até quatro alunos. Nele, passamos nossa experiência
-                        e capacitamos os estudantes a desenvolver sistemas e aplicativos web.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" src="assets/images/curso.svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-
-
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"><i class="bi bi-box"></i>&nbsp;A Arte e Software</h2>
-                    <p class="lead">Sou Pedro Silva, sócio fundador. Analista de Sistemas formado no Centro
-                        Tecnológico Oswaldo Cruz; especialista em Gestão de Projetos pelo Centro Paula Souza -
-                        FATEC-SP. Trabalho com desenvolvimento de sistemas web desde a década
-                        de 90. Vivenciei a disruptura provocada pela rede mundial nas relações pessoais e
-                        comerciais. Nos últimos 20 anos trabalho com educação. Fui executivo do Grupo Oswaldo
-                        Cruz de ensino e venho pesquisando e desenvolvendo
-                        novas metodologias de ensino na área de programação de computadores.</p>
-                    <a href="assets/cv/pedro-silva.pdf"><button class="btn btn-primary btn-lg">Currículo</button></a>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" src="assets/images/quem-somos.png" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-
-
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <!-- /END THE FEATURETTES -->
+        <div class="container-flui p-3 bg-dark text-white">
+            Painel - Arte & Software
+        </div>
+        <div id="divAlertaErro">
 
         </div>
-        <!-- /.container -->
-
-        <div class="container">
-            <img class="img-responsive" src="assets/images/stack.png" width="100%"><br>
+        <div class="container-flui text-white mt-2 ml-3"></div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="painel-tab" data-bs-toggle="tab" data-bs-target="#painel"
+                    type="button" role="tab" aria-controls="painel" aria-selected="true">Painel</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="usuarios-tab" data-bs-toggle="tab" data-bs-target="#usuarios" type="button"
+                    role="tab" aria-controls="usuarios" aria-selected="false">Usuarios</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="conteudos-tab" data-bs-toggle="tab" data-bs-target="#conteudos"
+                    type="button" role="tab" aria-controls="conteudos" aria-selected="false">Conteúdos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pesquisas-tab" data-bs-toggle="tab" data-bs-target="#pesquisas"
+                    type="button" role="tab" aria-controls="conteudos" aria-selected="false">Pesquisas</button>
+            </li>
+        </ul>
+        <div class="tab-content p-3" id="tab-areas">
+            <div class="tab-pane fade show active" id="painel" role="tabpanel" aria-labelledby="painel-tab">
+                <div class="container-fluid text-primary h5">Painel</div>
+                <div class="container-fluid text-dark" id="divPainel"></div>
+            </div>
+            <div class="tab-pane fade" id="usuarios" role="tabpanel" aria-labelledby="usuarios-tab">
+                <div class="container-fluid text-primary h5">Usuários</div>
+                <div class="container-fluid text-dark" id="divUsuarios"></div>
+            </div>
+            <div class="tab-pane fade" id="conteudos" role="tabpanel" aria-labelledby="conteudos-tab">
+                <div class="container-fluid text-primary h5">Conteúdos</div>
+                <div class="container-fluid text-dark" id="divConteudos"></div>
+            </div>
+            <div class="tab-pane fade" id="pesquisas" role="tabpanel" aria-labelledby="pesquisas-tab">
+                <div class="container-fluid text-primary h5">Pesquisas</div>
+                <div class="container-fluid text-dark" id="divPesquisas"></div>
+            </div>
+        </div>
         </div>
 
-
-        <hr class="featurette-divider">
-
-        <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-end"><a href="#"><i class="bi bi-arrow-up-circle-fill h4"></i></a></p>
-            <p class="text-secondary"><small>&copy; 2006-2022&nbsp;<img src="assets/images/cubo.svg" width="20"
-                        height="20">&nbsp;<b>Arte e Software Tecnologia</b>
-                    <br>Rua Edvard Carmilo, 1283 - Butantã - São Paulo - São Paulo
-                    <br><i class="bi bi-phone text-primary"></i>&nbsp;11 99492-3850&nbsp;&nbsp;<i
-                        class="bi bi-whatsapp text-primary"></i>&nbsp;11 99841-7175</small></p>
-
-        </footer>
     </main>
 
 </body>
 
-<script src="assets/vendor/axios/axios.min.js"></script>
-<script src="assets/vendor/socket.io-4.1.2/socket.io.min.js"></script>
-<script src="assets/vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/popper-2.9.2-dist/popper.min.js"></script>
+<script src="../assets/javascript/httprequest.js"></script>
+<script src="../assets/vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+    ((payload) => {
+
+        let tenant = new URL(window.location.href)
+
+        console.log(tenant)
+
+        httpRequest(`${tenant}/api?payload=${payload}`, montaPainel, alertaErro)
+
+        function montaPainel(json) {
+
+            let divPainel = document.getElementById('divPainel')
+                , divUsuarios = document.getElementById('divUsuarios')
+                , divConteudos = document.getElementById('divConteudos')
+                , divPesquisas = document.getElementById('divPesquisas')
+
+            divPainel.innerHTML = JSON.stringify(json.html.divPainel)
+            divUsuarios.innerHTML = JSON.stringify(json.html.divUsuarios)
+            divConteudos.innerHTML = JSON.stringify(json.html.divConteudos)
+            divPesquisas.innerHTML = JSON.stringify(json.html.divPesquisas)
+
+        }
+
+        function alertaErro(msg) {
+            let divAlertaErro = document.getElementById('divAlertaErro')
+            divAlertaErro.innerHTML = `<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>Ocorreu um erro</strong>${msg}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>`
+        }
+
+    }
+    )('63df04be4b27375679aefd1e413e0936bf956bc553c63a036e7959238cb9ce85', 'painel', 1)
+
+</script>
+
+
 
 </html>
